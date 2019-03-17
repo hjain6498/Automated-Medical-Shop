@@ -24,22 +24,42 @@ include('common.php');
             <div class="row mt-3">
                     <div class="col-xl-4 offset-xl-4 col-md-6 offset-md-3">
                         <h2>Prescription</h2>
-                        <form action="" method="get">
+                        <form action="prescription_script.php" method="get">
+                            <div class="form-group">
+                                <input type="date" placeholder="Date" name="date"  required="required">
+                            </div>
                             <div class="form-group">
                                 <input class="form-control" placeholder="Name" name="name"  required="required">
                             </div>
-							<select class="custom-select form-group form-control" name="med1">
-								<option selected>Medicine 1</option>
-								<option value="1">One</option>
-								<option value="2">Two</option>
-								<option value="3">Three</option>
-							</select>
-							<select class="custom-select form-group form-control" name="med2">
-								<option selected>Medicine 2</option>
-								<option value="1">One</option>
-								<option value="2">Two</option>
-								<option value="3">Three</option>
-							</select>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Phone" name="phone"  required="required">
+                            </div>
+                            <h6>Medicine 1</h6>
+                            <select class="custom-select form-group form-control" name="med1">
+				<option selected></option>
+				<option value="Paracetamol">Paracetamol</option>
+				<option value="Azithromycin">Azithromycin</option>
+				<option value="Domperidone">Domperidone</option>
+                            </select>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Quantity" name="quant1"  required="required" type='number'>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Medicine Description" name="desc1"  required="required">
+                            </div>
+                            <h6>Medicine 2</h6>
+                            <select class="custom-select form-group form-control" name="med2">
+				<option selected></option>
+                                <option value="Paracetamol">Paracetamol</option>
+				<option value="Azithromycin">Azithromycin</option>
+				<option value="Domperidone">Domperidone</option>
+                            </select>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Quantity" name="quant2" type='number'>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Medicine Description" name="desc2">
+                            </div>
                             <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>

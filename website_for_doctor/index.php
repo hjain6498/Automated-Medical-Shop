@@ -26,7 +26,7 @@ include('common.php');
         <div class="container-fluid" style="padding:0;">
             <div class="row mt-3">
                     <div class="col-xl-4 offset-xl-4 col-md-6 offset-md-3">
-                        <h2>SIGN UP</h2>
+                        <h2>SIGN UP (Doctor)</h2>
                         <div><p style="color:red"><?php echo filter_input(INPUT_GET,'database_error')?></p></div>
                         <form action="signup_script.php" method="post">
                             <div class="form-group">
